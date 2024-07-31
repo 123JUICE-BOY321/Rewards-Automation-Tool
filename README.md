@@ -1,1 +1,1 @@
-# Rewards-Automation-Tool
+# 🪙Rewards-Automation-Tool
