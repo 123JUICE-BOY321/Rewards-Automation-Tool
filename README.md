@@ -1,76 +1,46 @@
 # 🪙Rewards-Automation-Tool
+A simple Python script that automates Bing searches using Microsoft Edge to help accumulate Microsoft Rewards points through PC search activity.
+<br/><br/>
 
-A simple Python script that automates Bing searches using Microsoft Edge. This can help accumulate Microsoft Rewards points through PC search activity.
-
-## ⚠️ Disclaimer
-
+> [!WARNING]
 > This script automates user interactions and may violate Microsoft Rewards' [Terms of Service](https://www.microsoft.com/en-us/rewards/terms). Use at your own risk. This is intended for educational purposes only.
+<br/>
 
----
-
-## 🔧 Requirements
-
-- Windows OS (uses `os.system('start ...')` to launch Edge)
+## 📋 Prerequisites
+- Windows OS
 - Microsoft Edge browser
 - Python 3.x
-- `pyautogui` module
+<br/><br/>
 
-Install dependencies with:
+## 📦 Installation
+- ### Clone the Repository
+  ``` bash
+  git clone https://github.com/123JUICE-BOY321/Rewards-Automation-Tool.git
+  cd Rewards-Automation-Tool
+  ```
+- ### Install Requirements
+  ``` bash
+  pip install pyautogui
+  ```
+<br/><br/>
 
-```bash
-pip install pyautogui
-```
-
----
-
-## 🚀 How It Works
-
-1. Opens Microsoft Edge with Bing search.
-2. Randomly types and searches short character strings.
-3. Repeats this process multiple times to simulate user activity.
-4. Opens the Bing Rewards page when done.
-
----
-
-## 📄 Script Configuration
-
+## ⚙️ Configuration
 ```python
 x = 850       # X-coordinate of the Bing search box
 y = 185       # Y-coordinate of the Bing search box
 n = 10        # Number of searches (1 search = ~3 points)
 sleep = 8     # Delay in seconds between actions (adjust for internet speed)
 ```
+<br/><br/>
 
-- **Coordinates (`x`, `y`)** may need adjusting based on your screen resolution and browser layout.
-- `n` determines how many searches are performed.
-- `sleep` helps avoid premature typing before the page loads.
+## ▶️ Usage
+  ```bash
+  python rewards_automation_tool.py
+  ```
+1. Opens Microsoft Edge with Bing search.
+2. Perform `n` searches using random 3-letter strings.
+3. Opens the Microsoft Rewards page when done.
+<br/><br/>
 
----
-
-## 💡 Example Use
-
-```bash
-python rewards_automation_tool.py
-```
-
-The script will:
-- Open Edge to Bing
-- Perform `n` searches using random 3-letter strings
-- Open your Microsoft Rewards page at the end
-
----
-
-## 🧠 Notes
-
-- You must be logged into your Microsoft account in Edge's **Default profile**.
-- Ensure Edge is not already open when running the script.
-- Use at moderate frequency to avoid detection or bans.
-
----
-
-## 📬 Output
-
-```text
-Daily PC search completed.
-```
-
+## 📜 License
+🛡️ [**GNU General Public License v3.0 (GPLv3)**](LICENSE)
